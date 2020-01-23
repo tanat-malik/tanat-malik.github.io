@@ -147,7 +147,7 @@
       text-transform: uppercase; }
     .pay-content {
       margin-top: 30px;
-      flex-direction: column; }
+      display: block; }
     .pay__column {
       flex: 1 1 100%;
       margin-bottom: 20px; }
@@ -157,7 +157,7 @@
   .action {
     text-align: center; }
     .action-body {
-      flex-direction: column; }
+      display: block; }
     .action__column:first-child {
       flex: 1 1 100%; }
     .action__column .callback {

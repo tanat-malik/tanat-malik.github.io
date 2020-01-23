@@ -201,8 +201,8 @@ input[type="radio"].visually-hidden {
     flex: 1 1 auto;
     font-family: "Old Standard TT", "Times", "Times New Roman", serif; }
   .portfolio-img {
-    padding: 0 0 100% 0;
-    height: 100%; }
+    overflow: hidden;
+    height: 300px; }
   .portfolio-button {
     margin-top: 20px;
     text-align: center; }

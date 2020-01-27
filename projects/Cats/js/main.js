@@ -90,3 +90,44 @@ ibg();
 		burgerLine.classList.add('change-burger');
 	})
 }());
+
+(function () {
+	let filter = document.querySelector('.filter');
+	let filterButton = document.querySelector('.aside-filter__button');
+	let filterClose = document.querySelector('.filter__close');
+	filterButton.addEventListener('click', () => {
+		filter.classList.add('filter__show');
+	});
+	filterClose.addEventListener('click', () => {
+		filter.classList.remove('filter__show');
+	});
+	document.addEventListener('keydown', (evt) => {
+		if(evt.keyCode === 27) {
+			filter.classList.remove('filter__show');
+		}
+	});
+		
+}());
+
+(function	() {
+	let modal = document.querySelector('.modal');
+	let modalBtn = document.querySelectorAll('.room__btn');
+	let modalClose = document.querySelector('.modal__close');
+	for(let i = 0; i < modalBtn.length; i++) {
+		modalBtn[i].addEventListener('click', () => {
+		modal.classList.add('modal__show');
+		});	
+	}
+
+		modalClose.addEventListener('click', () => {
+			modal.classList.remove('modal__show');
+		});	
+
+
+	document.addEventListener('keydown', (evt) => {
+		if(evt.keyCode === 27) {
+			modal.classList.remove('modal__show');
+		}
+	});
+
+}());

@@ -17,6 +17,24 @@
 @media screen and (max-width: 850px) {
   .filter {
     display: none; }
+    .filter__close {
+      display: block; }
+    .filter__show {
+      display: block; }
+    .filter__content {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      padding: 50px 0 35px 60px;
+      box-sizing: border-box;
+      background: #FFFEFD;
+      box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+      border-radius: 6px; }
+    .filter__button:first-child {
+      display: block; }
   .aside-filter {
     display: block; }
   .room-catalog {
@@ -27,11 +45,9 @@
 @media screen and (max-width: 768px) {
   .header__item:not(:last-child) {
     margin-right: 14px; }
-  .banner {
-    background-image: url(../img/banner-tablet-bg.jpg); }
-    .banner__content {
-      padding: 140px 0 530px;
-      text-align: center; }
+  .banner__content {
+    padding: 140px 0 530px;
+    text-align: center; }
   .features__block {
     display: block; }
   .feature__column {

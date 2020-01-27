@@ -8,7 +8,8 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #1A212F;
-  background-color: #FFFEFD; }
+  background-color: #FFFEFD;
+  position: relative; }
 
 .container {
   max-width: 1170px;
@@ -476,7 +477,10 @@ input[type="radio"].visually-hidden {
     border-radius: 25px;
     background: #fff url(../img/filter-icon.svg) no-repeat 20px 10px;
     cursor: pointer;
-    font-size: 14px; }
+    font-size: 14px;
+    transition: .2s; }
+    .aside-filter__button:active {
+      transform: translateY(4px); }
     .aside-filter__button:focus {
       -webkit-box-shadow: 0 0 5px #879eb0; }
 
@@ -489,7 +493,7 @@ input[type="radio"].visually-hidden {
   -webkit-border-radius: 20px;
   /* Подмешал вебкитовский градиент,
      чтобы не показывать стрелку в других браузерах */
-  background: #fff url(../img/select-arrow-bottom.png) no-repeat right center;
+  background: #fff;
   border: transparent;
   padding: 5px 40px 5px 20px;
   box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
@@ -516,74 +520,95 @@ input[type="radio"].visually-hidden {
 .catalog-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 110px; }
+  padding-bottom: 110px;
+  position: relative; }
 
-.filter {
-  width: 210px; }
-  .filter__block {
-    margin-bottom: 30px; }
-    .filter__block-area {
-      margin-bottom: 16px; }
-    .filter__block-room {
-      margin-bottom: 23px; }
-  .filter__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 17px;
-    color: #1A212F; }
-  .filter__option {
-    margin-bottom: 13px;
-    padding-left: 30px; }
-    .filter__option label {
-      position: relative;
-      cursor: pointer; }
-  .filter__input-checkbox + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -30px;
-    width: 20px;
-    height: 20px;
-    background: url(../img/checked-off.svg) no-repeat center center; }
-  .filter__input-checkbox:checked + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -30px;
-    width: 20px;
-    height: 20px;
-    background: url(../img/checked-on.svg) no-repeat center center; }
-  .filter__input-checkbox:hover + label:before,
-  .filter__input-checkbox:hover + label:after,
-  .filter__input:focus + label {
-    opacity: 0.6; }
-  .filter__input:disabled + label {
-    color: #a6a6a6;
-    opacity: 0.2; }
-  .filter__button {
-    width: 190px;
-    display: inline-block;
-    padding: 10px 29px;
-    margin-bottom: 15px;
-    background: none;
-    border: 2px solid #FAC663;
-    box-sizing: border-box;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    cursor: pointer;
-    transition: .2s; }
-    .filter__button:hover {
-      background: #FAC663;
-      color: #fff; }
-    .filter__button:active {
-      transform: translateY(2px); }
-    .filter__button:first-child {
-      display: none;
-      background: #FAC663;
-      color: #fff; }
+.filter__content {
+  width: 210px;
+  background: #fff;
+  position: relative; }
+
+.filter__close {
+  display: none;
+  width: 16px;
+  height: 16px;
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer; }
+
+.filter__block {
+  margin-bottom: 30px; }
+  .filter__block-area {
+    margin-bottom: 16px; }
+  .filter__block-room {
+    margin-bottom: 23px; }
+
+.filter__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 17px;
+  color: #1A212F; }
+
+.filter__option {
+  margin-bottom: 13px;
+  padding-left: 30px; }
+  .filter__option label {
+    position: relative;
+    cursor: pointer; }
+
+.filter__input-checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/checked-off.svg) no-repeat center center; }
+
+.filter__input-checkbox:checked + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/checked-on.svg) no-repeat center center; }
+
+.filter__input-checkbox:hover + label:before,
+.filter__input-checkbox:hover + label:after,
+.filter__input:focus + label {
+  opacity: 0.6; }
+
+.filter__input:disabled + label {
+  color: #a6a6a6;
+  opacity: 0.2; }
+
+.filter__button {
+  width: 190px;
+  display: inline-block;
+  padding: 10px 29px;
+  margin-bottom: 15px;
+  background: none;
+  border: 2px solid #FAC663;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  transition: .2s; }
+  .filter__button:hover {
+    background: #FAC663;
+    color: #fff; }
+  .filter__button:active {
+    transform: translateY(2px); }
+  .filter__button:first-child {
+    display: none;
+    background: #FAC663;
+    color: #fff; }
 
 .price__filter-wrapper {
   display: flex; }
@@ -677,3 +702,72 @@ input[type="radio"].visually-hidden {
     margin: 0 0 29px;
     font-size: 16px;
     line-height: 22px; }
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100px;
+  background: rgba(255, 254, 253, 0.8);
+  backdrop-filter: blur(8px); }
+  .modal__content {
+    position: relative;
+    max-width: 440px;
+    padding: 53px 30px 60px;
+    margin: 0 auto;
+    background: #FFFEFD;
+    box-shadow: 0px 0px 25px rgba(153, 153, 153, 0.25);
+    border-radius: 10px; }
+  .modal__show {
+    display: block; }
+  .modal__close {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer; }
+  .modal__title {
+    margin: 0 0 43px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center; }
+  .modal input {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A212F; }
+  .modal input[type="date"] {
+    width: 200px; }
+  .modal input[type="text"]::placeholder,
+  .modal input[type="tel"]::placeholder,
+  .modal input[type="email"]:placeholder,
+  .modal input[type="date"]:placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A212F; }
+  .modal-button__wrapper {
+    margin: 48px 0 0;
+    text-align: center; }
+  .modal__btn {
+    background-color: #FF7236;
+    background-image: url(../img/paw-thumb2.svg);
+    background-position: 185px;
+    color: #fff; }
+
+.form__option {
+  margin: 0 0 21px; }
+  .form__option span {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A212F; }

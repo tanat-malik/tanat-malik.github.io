@@ -1,0 +1,62 @@
+@media screen and (max-width: 1024px) {
+  .feature__column {
+    flex: 0 0 48%; }
+  .room__slider {
+    padding: 0; }
+  .room__img-block {
+    flex: 0 0 50%; }
+  .room__content-block {
+    flex: 0 0 50%;
+    margin: 25px 0 0 -70px;
+    padding: 20px 30px; } }
+
+@media screen and (max-width: 768px) {
+  .header__item:not(:last-child) {
+    margin-right: 14px; }
+  .banner {
+    background-image: url(../img/banner-tablet-bg.jpg); }
+    .banner__content {
+      padding: 140px 0 530px;
+      text-align: center; }
+  .features__block {
+    display: block; }
+  .feature__column {
+    display: block; }
+  .feature__item {
+    min-height: 200px;
+    padding: 25px; }
+  .feature__img {
+    margin-bottom: 25px; }
+  .room__block {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto; }
+  .room__img-block, .room__content-block {
+    display: block; }
+  .room__content-block {
+    width: 100%;
+    margin: 0; }
+  .contact__content {
+    display: block; }
+  .contact__desc {
+    padding: 60px 15px 0; }
+  .contact__column:first-child {
+    display: block; }
+  .contact__map iframe {
+    height: 320px; } }
+
+@media screen and (max-width: 480px) {
+  .features,
+  .review {
+    padding: 50px 0; }
+  .burger {
+    display: block; }
+  .header__list {
+    display: none; }
+  .banner__content {
+    padding: 90px 0 300px; }
+  .review__column {
+    padding: 30px; }
+  .review__block:nth-child(2) {
+    flex-direction: column;
+    align-items: center; } }

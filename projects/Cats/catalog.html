@@ -23,6 +23,11 @@
 						<img src="img/logo.svg" alt="">
 					</a>
 					<nav class="header__nav">
+							<div class="burger">
+								<div class="burger-line"></div>
+								<div class="burger-line"></div>
+								<div class="burger-line"></div>
+						</div>
 						<ul class="header__list">
 							<li class="header__item"><a href="#!" class="header__link">Почему мы?</a></li>
 							<li class="header__item"><a href="#!" class="header__link">Номера</a></li>
@@ -39,6 +44,21 @@
 			<!-- CATALOG -->
 			<div class="catalog__header container">
 				<h2 class="section-name">Наши номера</h2>
+				<div class="catalog-filter">
+					<p class="aside-filter">
+						<button class="aside-filter__button">Фильтры</button>
+					</p>
+					<p class="select-filter">
+						<form action="#">
+							<select name="" id="" class="custom-select">
+								<option value="">&uarr; По площади</option>
+								<option value="">&darr; По площади</option>
+								<option value="">&uarr; По цене</option>
+								<option value="">&darr; По цене</option>
+							</select>
+						</form>
+					</p>
+				</div>
 			</div>
 			<div class="catalog-wrapper container">
 				<aside class="filter">
@@ -106,27 +126,25 @@
 				</aside>
 				<div class="room-catalog">
 					<div class="room-catalog__content">
-						<div class="room-catalog__column">
-							<div class="room-catalog__item">
+						<div class="room-catalog__item">
 								<div class="room-catalog__img">
-									<img src="img/catalog-img1.png" alt="">
+									<img src="img/catalog-img2.png" alt="">
 								</div>
 								<div class="room-catalog__wrapper">
-									<h3 class="room-catalog__title">Эконом</h3>
-									<p class="room-catalog__desc">Размеры (ШхГхВ) - 90х70х180 см</p>
-									<p class="room-catalog__desc">Площадь - 0,63 м2</p>
+									<h3 class="room-catalog__title">Эконом плюс</h3>
+									<p class="room-catalog__desc">Размеры (ШхГхВ) - 90х100х180 см</p>
+									<p class="room-catalog__desc">Площадь - 0,90 м2</p>
 									<p class="room-catalog__desc">
 										Оснащение номера
 										<span class="room-catalog__thumb">
 											<img src="img/empty-icon.svg" alt="">
+											<img src="img/empty-icon.svg" alt="">
 										</span> 
 									</p>
-									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">100&#8381;</span></p>
+									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">200&#8381;</span></p>
 								</div>
 								<button class="btn room__btn">Забронировать</button>
 							</div>
-						</div>
-						<div class="room-catalog__column">
 							<div class="room-catalog__item">
 								<div class="room-catalog__img">
 									<img src="img/catalog-img2.png" alt="">
@@ -146,95 +164,26 @@
 								</div>
 								<button class="btn room__btn">Забронировать</button>
 							</div>
-						</div>
-						<div class="room-catalog__column">
 							<div class="room-catalog__item">
 								<div class="room-catalog__img">
-									<img src="img/catalog-img3.png" alt="">
+									<img src="img/catalog-img2.png" alt="">
 								</div>
 								<div class="room-catalog__wrapper">
-									<h3 class="room-catalog__title">Комфорт</h3>
-									<p class="room-catalog__desc">Размеры (ШхГхВ) - 100х125х180 см</p>
-									<p class="room-catalog__desc">Площадь - 1,13 м2</p>
+									<h3 class="room-catalog__title">Эконом плюс</h3>
+									<p class="room-catalog__desc">Размеры (ШхГхВ) - 90х100х180 см</p>
+									<p class="room-catalog__desc">Площадь - 0,90 м2</p>
 									<p class="room-catalog__desc">
 										Оснащение номера
 										<span class="room-catalog__thumb">
 											<img src="img/empty-icon.svg" alt="">
 											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
 										</span> 
 									</p>
-									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">250&#8381;</span></p>
+									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">200&#8381;</span></p>
 								</div>
 								<button class="btn room__btn">Забронировать</button>
 							</div>
-						</div>
-						<div class="room-catalog__column">
-							<div class="room-catalog__item">
-								<div class="room-catalog__img">
-									<img src="img/catalog-img4.png" alt="">
-								</div>
-								<div class="room-catalog__wrapper">
-									<h3 class="room-catalog__title">Комфорт</h3>
-									<p class="room-catalog__desc">Размеры (ШхГхВ) - 100х125х180 см</p>
-									<p class="room-catalog__desc">Площадь - 1,13 м2</p>
-									<p class="room-catalog__desc">
-										Оснащение номера
-										<span class="room-catalog__thumb">
-											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
-										</span> 
-									</p>
-									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">250&#8381;</span></p>
-								</div>
-								<button class="btn room__btn">Забронировать</button>
-							</div>
-						</div>
-						<div class="room-catalog__column">
-							<div class="room-catalog__item">
-								<div class="room-catalog__img">
-									<img src="img/catalog-img5.png" alt="">
-								</div>
-								<div class="room-catalog__wrapper">
-									<h3 class="room-catalog__title">Комфорт</h3>
-									<p class="room-catalog__desc">Размеры (ШхГхВ) - 100х125х180 см</p>
-									<p class="room-catalog__desc">Площадь - 1,13 м2</p>
-									<p class="room-catalog__desc">
-										Оснащение номера
-										<span class="room-catalog__thumb">
-											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
-										</span> 
-									</p>
-									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">250&#8381;</span></p>
-								</div>
-								<button class="btn room__btn">Забронировать</button>
-							</div>
-						</div>
-						<div class="room-catalog__column">
-							<div class="room-catalog__item">
-								<div class="room-catalog__img">
-									<img src="img/catalog-img6.png" alt="">
-								</div>
-								<div class="room-catalog__wrapper">
-									<h3 class="room-catalog__title">Комфорт</h3>
-									<p class="room-catalog__desc">Размеры (ШхГхВ) - 100х125х180 см</p>
-									<p class="room-catalog__desc">Площадь - 1,13 м2</p>
-									<p class="room-catalog__desc">
-										Оснащение номера
-										<span class="room-catalog__thumb">
-											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
-											<img src="img/empty-icon.svg" alt="">
-										</span> 
-									</p>
-									<p class="room-catalog__desc">Цена за сутки: <span class="room-catalog__price">250&#8381;</span></p>
-								</div>
-								<button class="btn room__btn">Забронировать</button>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>

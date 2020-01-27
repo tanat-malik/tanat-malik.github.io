@@ -431,8 +431,10 @@ input[type="radio"].visually-hidden {
 .footer__list {
   display: flex; }
 
-.footer__item:not(:last-child) {
+.footer__item {
   margin-right: 26px; }
+  .footer__item:last-child {
+    margin-right: 0; }
 
 .footer__link {
   display: block;

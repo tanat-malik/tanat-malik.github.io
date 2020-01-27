@@ -43,7 +43,14 @@
   .contact__column:first-child {
     display: block; }
   .contact__map iframe {
-    height: 320px; } }
+    height: 320px; }
+  .footer__wrapper {
+    padding: 10px 0;
+    flex-direction: column; }
+  .footer__logo {
+    margin-bottom: 15px; }
+  .footer__item {
+    margin: 0 15px; } }
 
 @media screen and (max-width: 480px) {
   .features,
@@ -59,4 +66,14 @@
     padding: 30px; }
   .review__block:nth-child(2) {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .footer__list {
+    flex-wrap: wrap; }
+  .footer__item {
+    margin-bottom: 10px; }
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer__copy {
+    line-height: 18px; } }

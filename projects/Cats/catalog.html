@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/media.css">
-		<link rel="stylesheet" href="libs/animate/animate.min.css">
 		<link rel="stylesheet" href="libs/slick/slick.css">
 		<link rel="stylesheet" href="libs/slick/slick-theme.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700|Rubik:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -29,9 +28,9 @@
 								<div class="burger-line"></div>
 						</div>
 						<ul class="header__list">
-							<div class="header__list-close">
+							<span class="header__list-close">
 								<img src="img/close.svg" width="30" height="30" alt="">
-							</div>
+							</span>
 							<li class="header__item"><a href="#!" class="header__link">Почему мы?</a></li>
 							<li class="header__item"><a href="#!" class="header__link">Номера</a></li>
 							<li class="header__item"><a href="#!" class="header__link">Отзывы</a></li>
@@ -53,7 +52,7 @@
 					</p>
 					<p class="select-filter">
 						<form action="#">
-							<select name="" id="" class="custom-select">
+							<select name="select-filter" class="custom-select">
 								<option value="">&uarr; По площади</option>
 								<option value="">&darr; По площади</option>
 								<option value="">&uarr; По цене</option>
@@ -296,9 +295,6 @@
 			</div>
 		</footer>
 
-
-
-
 		<!-- MODAL -->
 		<div class="modal">
 			<div class="modal__content">
@@ -318,7 +314,7 @@
 						<input type="email" name="email" placeholder="E-mail">
 					</p>
 					<p class="form__option">
-						<span>Дата заезда</span> <input type="date" required>
+						<span>Дата заезда</span> <input type="date">
 					</p>
 					<p class="modal-button__wrapper">
 						<button class="btn modal__btn">Отправить заявку</button>
@@ -327,16 +323,10 @@
 			</div>
 		</div>
 
-
-	
-
 		<script src="./js/jquery.min.js"></script>
 		<script src="./libs/slick/slick.js"></script>
 		<script src="./js/main.js"></script>
 
 	</body>
 
-
-
-	
 </html>

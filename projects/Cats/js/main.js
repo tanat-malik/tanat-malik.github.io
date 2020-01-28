@@ -1,6 +1,6 @@
 // Fixed nav
 (function () {
-	const header = document.querySelector('.hesader');
+	const header = document.querySelector('.header');
 	window.onscroll = () => {
 		if(window.pageYOffset > 10) {
 			header.classList.add('header__active');
@@ -8,46 +8,6 @@
 			header.classList.remove('header__active');
 		}
 	};
-}());
-
-// Nav scroll
-(function () {
-
-const smoothScroll = function (targetEl, duration) {
-  const headerElHeight =  document.querySelector('.header').clientHeight;
-  let target = document.querySelector(targetEl);
-  let targetPosition = target.getBoundingClientRect().top - headerElHeight;
-  let startPosition = window.pageYOffset;
-  let startTime = null;
-
-  const ease = function(t,b,c,d) {
-      t /= d / 2;
-      if (t < 1) return c / 2 * t * t + b;
-      t--;
-      return -c / 2 * (t * (t - 2) - 1) + b;
-  };
-
-  const animation = function(currentTime){
-      if (startTime === null) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const run = ease(timeElapsed, startPosition, targetPosition, duration);
-      window.scrollTo(0,run);
-      if (timeElapsed < duration) requestAnimationFrame(animation);
-  };
-  requestAnimationFrame(animation);
-
-};
-
-const scrollTo = function () {
-  const links = document.querySelectorAll('.js-scroll');
-  links.forEach(each => {
-      each.addEventListener('click', function () {
-          const currentTarget = this.getAttribute('href');
-          smoothScroll(currentTarget, 1000);
-      });
-  });
-};
-scrollTo();
 }());
 
 // .ibg
@@ -82,51 +42,72 @@ ibg();
 
 }());
 
-(function () {
-	let burger = document.querySelector('.burger');
-	let burgerLine = document.querySelectorAll('.burger-line');
-	let headerList = document.querySelector('.header__list');
-	burger.addEventListener('click', function() {
-		burgerLine.classList.add('change-burger');
-	})
-}());
-
+/* FILTER SCRIPT */
 (function () {
 	let filter = document.querySelector('.filter');
 	let filterButton = document.querySelector('.aside-filter__button');
 	let filterClose = document.querySelector('.filter__close');
-	filterButton.addEventListener('click', () => {
-		filter.classList.add('filter__show');
-	});
-	filterClose.addEventListener('click', () => {
-		filter.classList.remove('filter__show');
-	});
-	document.addEventListener('keydown', (evt) => {
-		if(evt.keyCode === 27) {
+
+	if (filter) {
+		filterButton.addEventListener('click', () => {
+			filter.classList.add('filter__show');
+		});
+
+		filterClose.addEventListener('click', () => {
 			filter.classList.remove('filter__show');
-		}
-	});
-		
+		});
+
+		document.addEventListener('keydown', (evt) => {
+			if(evt.keyCode === 27) {
+				filter.classList.remove('filter__show');
+			}
+		});
+	}
+
 }());
 
+/* MODAL SCRIPT */
 (function	() {
 	let modal = document.querySelector('.modal');
 	let modalBtn = document.querySelectorAll('.room__btn');
 	let modalClose = document.querySelector('.modal__close');
-	for(let i = 0; i < modalBtn.length; i++) {
-		modalBtn[i].addEventListener('click', () => {
-		modal.classList.add('modal__show');
-		});	
-	}
+
+	if (modal) {
+		for(let i = 0; i < modalBtn.length; i++) {
+			modalBtn[i].addEventListener('click', () => {
+			modal.classList.add('modal__show');
+			});	
+		}
 
 		modalClose.addEventListener('click', () => {
 			modal.classList.remove('modal__show');
 		});	
 
 
+		document.addEventListener('keydown', (evt) => {
+			if(evt.keyCode === 27) {
+				modal.classList.remove('modal__show');
+			}
+		});
+	}
+
+}());
+
+(function () {
+	let burger = document.querySelector('.burger')
+	let headerList = document.querySelector('.header__list');
+	let headerListClose = document.querySelector('.header__list-close');
+
+	burger.addEventListener('click', () => {
+		headerList.classList.add('header__list-show');
+	});
+	headerListClose.addEventListener('click', () => {
+		headerList.classList.remove('header__list-show');
+	});
+
 	document.addEventListener('keydown', (evt) => {
 		if(evt.keyCode === 27) {
-			modal.classList.remove('modal__show');
+			headerList.classList.remove('header__list-show');
 		}
 	});
 

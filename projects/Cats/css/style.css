@@ -76,6 +76,9 @@ input[type="radio"].visually-hidden {
   .btn:active {
     transform: translateY(2px); }
 
+.main {
+  padding-top: 76px; }
+
 .section-name {
   margin: 0;
   font-family: "Rubik", sans-serif;
@@ -86,7 +89,16 @@ input[type="radio"].visually-hidden {
 
 /* HEADER */
 .header {
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+  .header__active {
+    z-index: 1;
+    border-bottom: 1px solid #000; }
   .header__content {
     min-height: 76px;
     display: flex;
@@ -97,6 +109,8 @@ input[type="radio"].visually-hidden {
   .header__list {
     display: flex;
     margin-left: 5px; }
+    .header__list-close {
+      display: none; }
   .header__item:not(:last-child) {
     margin-right: 26px; }
   .header__link {
@@ -706,12 +720,12 @@ input[type="radio"].visually-hidden {
 /* MODAL */
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100px;
+  z-index: 10;
   background: rgba(255, 254, 253, 0.8);
   backdrop-filter: blur(8px); }
   .modal__content {

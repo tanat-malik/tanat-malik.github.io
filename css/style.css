@@ -177,9 +177,12 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 -10px; }
   .portfolio-column {
     padding: 0 10px;
+    margin-bottom: 30px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 23%;
     flex: 0 0 23%;

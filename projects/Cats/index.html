@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="stylesheet" href="css/media.min.css">
+		<link rel="stylesheet" href="libs/animate/animate.min.css">
 		<link rel="stylesheet" href="libs/slick/slick.css">
 		<link rel="stylesheet" href="libs/slick/slick-theme.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700|Rubik:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -19,15 +20,15 @@
 			    border-radius: 10px;
 			    content: '';
 			    position: fixed;
-			    top: 10px;
+			    top: 80px;
 			    left: 10px;
 			    z-index: 100;
-			    display: -webkit-box;
-			    display: -ms-flexbox;
 			    display: flex;
-			    -webkit-box-pack: center;
-			    -ms-flex-pack: center;
 			    justify-content: center;
+			    opacity: 0.3;
+			}
+			.arrow-left:hover {
+				opacity: 1;
 			}
 		</style>
 	</head>
@@ -334,9 +335,10 @@
 				</div>
 			</div>
 		</footer>
-		<a href="https://tanat-malik.github.io/" class="arrow-left">
-			<img src="img/Arrow.svg" width="45" height="45" alt="">
-		</a>
+		<!-- ARROW LEFT -->
+	    <a href="https://tanat-malik.github.io/" class="arrow-left">
+	      <img src="img/Arrow.svg" width="45" height="45" alt="">
+	    </a>
 		<script src="./js/jquery.min.js"></script>
 		<script src="./libs/slick/slick.js"></script>
 		<script src="./js/main.js"></script>

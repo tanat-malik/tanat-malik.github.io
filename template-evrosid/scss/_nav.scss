@@ -1,0 +1,136 @@
+.user-nav,
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.user-nav {
+  margin-bottom: 25px;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.site-logo {
+  display: block;
+  width: 125px;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+  &__town,
+  &__phone {
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #FFFFFF;
+  }
+  &__street,
+  &__slogan {
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+  }
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  &__ru,
+  &__us {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+  }
+  &__ru {
+    background: url('../img/rus.png') center no-repeat;
+    margin-right: 15px;
+  }
+  &__us {
+    background: url('../img/us.png') center no-repeat;
+  }
+}
+
+.product-button {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 17px 34px;
+  margin-right: 40px;
+  &__heading {
+    margin-right: 23px;
+  }
+}
+
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  &__link {
+    display: block;
+    font-weight: bold;
+    font-family: $tt;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+}
+
+.cart {
+  display: flex;
+  align-items: flex-end;
+  &__block-icon {
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+    position: relative;
+  }
+  &__order-value {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #232FE5;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -10px;
+  }
+  &__title {
+    font-size: 12px;
+    line-height: 20px;
+    color: #8E8E8E;
+  }
+  &__cost {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+}

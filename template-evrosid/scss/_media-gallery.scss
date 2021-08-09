@@ -1,0 +1,49 @@
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1140px) {
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .gallery {
+    &__row {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .gallery-item {
+    &__link {
+      max-width: 100%;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .gallery {
+    &__row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .gallery {
+    margin: 0 0 30px;
+    &__row {
+      padding: 40px 0;
+      grid-template-columns: auto;
+      grid-gap: 30px 0;
+    }
+  }
+
+}

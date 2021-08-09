@@ -1,0 +1,12 @@
+.company {
+  padding: 0 0 55px;
+  .section-title {
+    max-width: 540px;
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

@@ -1,0 +1,80 @@
+.main-footer {
+  padding: 50px 0 25px;
+  background-color: #FAFAFA;
+  &__top {
+    margin: 0 0 40px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__bottom {
+    display: flex;
+    align-items: flex-start;
+    p,
+    span,
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #979797;
+    }
+    p,
+    span {
+      margin-right: 55px;
+    }
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 20px;
+  background-image: url('../img/footer-phone.svg');
+  background-position: top 5px left;
+  background-repeat: no-repeat;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  &__phone {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #343434;
+  }
+  &__heading {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #9E9E9E;
+  }
+}
+
+.footer-block {
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #343434;
+  }
+  &__list-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #343434;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__payment {
+    img {
+      margin-right: 20px;
+    }
+  }
+}

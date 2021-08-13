@@ -1,0 +1,208 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.top-nav {
+  &__wrapper {
+    padding: 10px 0;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.top-list {
+  display: flex;
+  align-items: flex-start;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &__link {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    color: #F3F3F3;
+  }
+}
+
+.btn-favorites {
+  margin: 0 30px;
+}
+
+.top-form {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__input {
+    width: 100%;
+    padding: 7px 55px 6px 10px;
+    border: 1px solid #F3CD82;
+    border-radius: 4px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 11.0512px;
+    line-height: 118.69%;
+    color: #FFFFFF;
+    &::placeholder {
+      font-weight: 600;
+      font-size: 11.0512px;
+      line-height: 118.69%;
+      color: #FFFFFF;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 28px;
+    background-color: #F3CD82;
+    background-image: url('../img/kitchen.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #F3CD82;
+    border-radius: 4.29767px;
+  }
+}
+
+.bottom-nav {
+  background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(241, 243, 235, 0.03) 100%);
+  backdrop-filter: blur(15px);
+  &__wrapper {
+    min-height: 136px;
+    display: flex;
+  }
+}
+
+.logo-and-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 40px;
+  color: #fff;
+
+}
+
+.site-logo {
+  width: 120px;
+  height: 42px;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 123.69%;
+  color: #E8E8E8;
+}
+
+.calculation {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  border-left: 0.4px solid rgba(233, 249, 245, 0.2);
+  border-right: 0.4px solid rgba(233, 249, 245, 0.2);
+  &__btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 91px;
+    height: 98px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 112%;
+    text-align: center;
+    color: #E8E8E8;
+    transition: .2s;
+    img {
+      margin-bottom: 5px;
+    }
+    &:hover {
+      border: 1px solid #F3CD82;
+      text-decoration: underline;
+    }
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.pin-block {
+  margin-left: auto;
+  padding: 0 25px;
+  border-left: 0.4px solid rgba(233, 249, 245, 0.2);
+  border-right: 0.4px solid rgba(233, 249, 245, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  &__title {
+    margin: 0 0 14px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 112.69%;
+    color: #F3F3F3;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 112.69%;
+    color: #F3F3F3;
+    img {
+      margin: 0 0 10px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact-block {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    margin: 0 0 10px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 112.69%;
+    color: #1ED3A8;
+    span {
+      color: #FF542F;
+    }
+  }
+  &__number {
+    display: block;
+    padding-left: 20px;
+    background-image: url('../img/telephone.svg');
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 112.69%;
+    color: #F3F3F3;
+    &:not(:last-child) {
+      margin: 0 0 5px;
+    }
+  }
+}

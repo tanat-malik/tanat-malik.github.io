@@ -1050,7 +1050,6 @@ button {
 }
 
 .service-block__img img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

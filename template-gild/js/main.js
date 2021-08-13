@@ -33,7 +33,15 @@ catalogSelect.addEventListener('click', function(evt) {
 // Скрпит для раскрывающегося фильтра
 filterShowBtn.addEventListener('click', function () {
   let showBtnText = document.querySelector('.filter-show-btn__text')
-  document.querySelector('.filter-form').classList.toggle('filter-form--show')
+  document.querySelector('.filter-form').classList.toggle('filter-form--show');
+
+  const filters = document.querySelectorAll('.filter');
+  filters.forEach(filter => {
+    if (filter.classList.contains('filter--open')) {
+      filter.classList.remove('filter--open')
+    }
+  });
+
   if (showBtnText.textContent === 'Закрыть фильтры') {
     showBtnText.textContent = 'Окрыть фильтры';
   } else {

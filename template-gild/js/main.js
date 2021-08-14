@@ -49,6 +49,30 @@ filterShowBtn.addEventListener('click', function () {
   }
 });
 
+let sliderOne = document.querySelector(".filter-range__input-1");
+let sliderTwo = document.querySelector(".filter-range__input-2");
+let displayValOne = document.querySelector(".filter-range__value-1");
+let displayValTwo = document.querySelector(".filter-range__value-2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.querySelector(".filter-range__input-1").max;
+
+function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.textContent = sliderOne.value + ' кв.м.';
+}
+function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.textContent = sliderTwo.value + ' кв.м.';
+}
+
+sliderOne.addEventListener('input', slideOne)
+sliderTwo.addEventListener('input', slideTwo)
+
 
 
 

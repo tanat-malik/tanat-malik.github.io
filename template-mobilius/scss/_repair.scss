@@ -1,0 +1,46 @@
+.repair {
+  margin-bottom: 104px;
+  &__wrapper {
+    margin-top: 62px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 75px;
+  }
+}
+
+.repair-item {
+  &__icon {
+    width: 48px;
+    height: 40px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  &__icon--display {
+    background-image: url('../img/repair-display.svg');
+  }
+  &__icon--plume {
+    background-image: url('../img/repair-plume.svg');
+  }
+  &__icon--buttons {
+    background-image: url('../img/repair-button.svg');
+  }
+  &__icon--battery {
+    background-image: url('../img/repair-battery.svg');
+    background-position-y: center;
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-family: "Intro Bold", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+  }
+  &__desc {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #676f77;
+  }
+}

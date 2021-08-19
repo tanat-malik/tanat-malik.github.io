@@ -1,0 +1,37 @@
+.service-order {
+  padding: 44px 60px 52px;
+  margin-bottom: 132px;
+
+  background: url("../img/running-courier.jpg") center no-repeat;
+  border-radius: 8px;
+  &__title {
+    max-width: 630px;
+    font-family: "Intro Bold", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+    /* or 42px */
+    color: #000000;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.04);
+  }
+  &__buttons {
+    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    padding: 10px 40px;
+    margin-right: 44px;
+
+    background: linear-gradient(90deg, #ee6409 0%, #f77d0c 100%), #ee6409;
+    border-radius: 4px;
+  }
+  &__phone {
+    font-family: 'Intro Bold', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+  }
+}

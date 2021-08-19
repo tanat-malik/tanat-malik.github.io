@@ -1,0 +1,133 @@
+.filter-section {
+  width: 214px;
+}
+
+.filter-range {
+  &__values {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__value {
+    width: 94px;
+    height: 40px;
+    padding-left: 12px;
+
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: #000000;
+  }
+}
+
+.range-container {
+  height: 14px;
+  background: #f77d0c;
+}
+
+.filter {
+  margin: 0 0 12px;
+  padding: 0 0 40px;
+  list-style: none;
+  border: none;
+  border-bottom: 1px solid #dedede;
+  &__title {
+    width: 100%;
+
+    margin-bottom: 14px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  &__title-chevron {
+    width: 10px;
+    height: 10px;
+  }
+  &__title-chevron::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: url("../img/filter-chevron.svg") center no-repeat;
+  }
+  &__option {
+    padding-left: 25px;
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+  &__input {
+    cursor: pointer;
+  }
+  &__input-checkbox + .filter__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/checkbox.svg") center no-repeat;
+  }
+  &__input-checkbox:checked + .filter__label::before {
+    background: none;
+  }
+  &__input-checkbox:checked + .filter__label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/checkbox-check.svg") center no-repeat;
+  }
+  &__input-checkbox:checked + .filter__label {
+    color: #000;
+  }
+  &__input-checkbox:disabled + label {
+    opacity: 0.5;
+  }
+  &__label {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #676f77;
+
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+}
+
+.filter-more {
+  font-family: "Intro Regular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.filter-reset {
+  margin-top: 30px;
+  padding-right: 20px;
+
+  background: url('../img/filter-reset.svg') center right no-repeat;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #676f77;
+}

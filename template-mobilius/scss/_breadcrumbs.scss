@@ -1,0 +1,19 @@
+.breadcrumbs {
+  margin-top: 46px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  &__link,
+  &__current {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #676F77;
+  }
+  &__divider {
+    width: 16px;
+    height: 1px;
+    margin: 0 8px;
+    background: #676F77;
+  }
+}

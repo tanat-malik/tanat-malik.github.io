@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+
+    <div class="top-nav">
+      <div class="container top-nav__container">
+        <ul class="top-list">
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Магазины</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Доставка</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Контакты</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Сервис</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Оптовикам</a>
+          </li>
+        </ul>
+        <a href="tel:89219123456" class="header-phone">+7 (921) 912-34-56</a>
+      </div>
+    </div>
+
+    <div class="middle-nav">
+      <div class="container middle-nav__container">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+
+        <form action="#" class="header-search">
+          <input type="text" name="name" class="header-search__input" placeholder="Поиск по каталогу" required>
+          <button class="header-search__btn"></button>
+        </form>
+
+        <div class="user-nav">
+          <a href="#" class="user-nav__item">
+            <img src="img/header-stat.svg" alt="img">
+            <span class="user-nav__title">Сравнение</span>
+          </a>
+          <a href="#" class="user-nav__item">
+            <img src="img/header-like.svg" alt="img">
+            <span class="user-nav__title">Избранное</span>
+          </a>
+          <a href="#" class="user-nav__item">
+            <img src="img/header-user.svg" alt="img">
+            <span class="user-nav__title">Войти</span>
+          </a>
+        </div>
+
+        <a href="#" class="cart-block">6 500 ₽</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Чехлы</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Стекла</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Аксессуары</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Новинки</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Распродажа</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Создай свой чехол</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__divider"></span>
+        <span class="breadcrumbs__current">Чехлы</span>
+      </div>
+
+      <div class="product-name">
+        <h2 class="product-name__title">Чехлы Iphone</h2>
+        <span class="product-name__value">Товаров в категории: 32</span>
+      </div>
+
+      <div class="catalog-tabs">
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Huawei</span>
+          <span class="catalog-tab__value">42</span>
+        </button>
+        <button class="catalog-tab catalog-tab--active">
+          <span class="catalog-tab__heading">Iphone</span>
+          <span class="catalog-tab__value">31</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Samsung</span>
+          <span class="catalog-tab__value">22</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Xiaomi</span>
+          <span class="catalog-tab__value">8</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Redmi</span>
+          <span class="catalog-tab__value">14</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Honor</span>
+          <span class="catalog-tab__value">26</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Meizu</span>
+          <span class="catalog-tab__value">16</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">ZTE</span>
+          <span class="catalog-tab__value">4</span>
+        </button>
+        <button class="catalog-tab">
+          <span class="catalog-tab__heading">Другие</span>
+          <span class="catalog-tab__value">45</span>
+        </button>
+      </div>
+
+      <div class="catalog">
+
+        <div class="filter-section">
+          <form action="#" class="filter-form">
+
+            <fieldset class="filter">
+              <legend class="filter__title">
+                <span>Цена, ₽</span>
+                <span class="filter__title-chevron"></span>
+              </legend>
+              <div class="filter__bottom">
+                <div class="filter-range">
+                  <div class="filter-range__values">
+                    <span class="filter-range__value">870</span>
+                    <span>-</span>
+                    <span class="filter-range__value">3800</span>
+                  </div>
+                  <div class="range-container">
+                    <!-- <div class="slider-track"></div>
+                    <input class="filter-range__input filter-range__input-1" type="range" min="100" max="5000" value="10">
+                    <input class="filter-range__input filter-range__input-2" type="range" min="100" max="5000" value="20"> -->
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter">
+              <legend class="filter__title">
+                <span>Цвет</span>
+                <span class="filter__title-chevron"></span>
+              </legend>
+              <div class="filter__bottom">
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="transparent"
+                    id="transparent" checked>
+                  <label class="filter__label" for="transparent">Прозрачный</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="red"
+                    id="red">
+                  <label class="filter__label" for="red">Красный</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="blue"
+                    id="blue">
+                  <label class="filter__label" for="blue">Синий</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="violet"
+                    id="violet" disabled>
+                  <label class="filter__label" for="violet">Фиолетовый</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="yellow"
+                    id="yellow">
+                  <label class="filter__label" for="yellow">Желтый</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="orange"
+                    id="orange">
+                  <label class="filter__label" for="orange">Оранжевый</label>
+                </div>
+                <button class="filter-more">Показать еще (12)</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter">
+              <legend class="filter__title">
+                <span>Материал</span>
+                <span class="filter__title-chevron"></span>
+              </legend>
+              <div class="filter__bottom">
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="plastic"
+                    id="plastic">
+                  <label class="filter__label" for="plastic">Пластик</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="silicone"
+                    id="silicone">
+                  <label class="filter__label" for="silicone">Силикон</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="tree"
+                    id="tree">
+                  <label class="filter__label" for="tree">Дерево</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter">
+              <legend class="filter__title">
+                <span>Тип чехла</span>
+                <span class="filter__title-chevron"></span>
+              </legend>
+              <div class="filter__bottom">
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="book"
+                    id="book">
+                  <label class="filter__label" for="book">Книжка</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="case"
+                    id="case">
+                  <label class="filter__label" for="case">Чехол</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="purse"
+                    id="purse">
+                  <label class="filter__label" for="purse">Портмоне</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter">
+              <legend class="filter__title">
+                <span>Наличие</span>
+                <span class="filter__title-chevron"></span>
+              </legend>
+              <div class="filter__bottom">
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="warehouse"
+                    id="warehouse">
+                  <label class="filter__label" for="warehouse">Склад</label>
+                </div>
+                <div class="filter__option">
+                  <input type="checkbox" class="visually-hidden filter__input filter__input-checkbox" name="order"
+                    id="order">
+                  <label class="filter__label" for="order">На заказ</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <button class="filter-reset" type="reset">Сбросить все фильтры</button>
+
+          </form>
+        </div>
+
+        <div class="catalog-section">
+
+          <div class="catalog-nav">
+
+            <div class="catalog-select">
+              <div class="catalog-select__title">Сортировка</div>
+              <div class="catalog-select__select">
+                <div class="catalog-select__top">Цена по возрастанию</div>
+                <div class="catalog-select__dropdown">
+                  <ul class="catalog-select__list">
+                    <li class="catalog-select__item">Цена по возрастанию</li>
+                    <li class="catalog-select__item">Цена по убыванию</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="catalog-content">
+
+            <div class="new-item">
+              <div class="new-item__header">
+                <img src="img/iphone-s-max.png" alt="img" class="new-item__img">
+              </div>
+              <div class="new-item__content">
+                <a href="card.html" class="new-item__link">Чехол для Iphone S max с кольцом</a>
+                <h4 class="new-item__desc">Cиликоновый чехол для iPhone SE/8/7 Lightweight Case</h4>
+              </div>
+              <div class="new-item__footer">
+                <p class="new-item__prices">
+                  <span class="new-item__old-price">2 500 ₽</span>
+                  <span class="new-item__new-price">2 500 ₽</span>
+                </p>
+                <button class="new-item__stat">
+                  <img src="img/item-stat.svg" alt="img">
+                </button>
+                <button class="new-item__like">
+                  <img src="img/item-like.svg" alt="img">
+                </button>
+                <button class="new-item__cart">
+                  <img src="img/item-cart.svg" alt="img">
+                </button>
+              </div>
+            </div>
+
+            <div class="new-item">
+              <div class="new-item__header">
+                <img src="img/soundmaster-pro.png" alt="img" class="new-item__img">
+              </div>
+              <div class="new-item__content">
+                <a href="card.html" class="new-item__link">Колонка Soundmaster Bass pro 20 вт</a>
+                <h4 class="new-item__desc">Cиликоновый чехол для iPhone SE/8/7 Lightweight Case </h4>
+              </div>
+              <div class="new-item__footer">
+                <p class="new-item__prices">
+                  <span class="new-item__old-price">2 500 ₽</span>
+                  <span class="new-item__new-price">2 500 ₽</span>
+                </p>
+                <button class="new-item__stat">
+                  <img src="img/item-stat.svg" alt="img">
+                </button>
+                <button class="new-item__like">
+                  <img src="img/item-like.svg" alt="img">
+                </button>
+                <button class="new-item__cart">
+                  <img src="img/item-cart.svg" alt="img">
+                </button>
+              </div>
+            </div>
+
+            <div class="new-item">
+              <div class="new-item__header">
+                <img src="img/usb-belkin.png" alt="img" class="new-item__img">
+              </div>
+              <div class="new-item__content">
+                <a href="card.html" class="new-item__link">Переходник Microusb Belkin USB-C</a>
+                <h4 class="new-item__desc">
+                  Cиликоновый чехол для iPhone SE/8/7 Lightweight Case
+                </h4>
+              </div>
+              <div class="new-item__footer">
+                <p class="new-item__prices">
+                  <span class="new-item__old-price">2 500 ₽</span>
+                  <span class="new-item__new-price">2 500 ₽</span>
+                </p>
+                <button class="new-item__stat">
+                  <img src="img/item-stat.svg" alt="img">
+                </button>
+                <button class="new-item__like">
+                  <img src="img/item-like.svg" alt="img">
+                </button>
+                <button class="new-item__cart">
+                  <img src="img/item-cart.svg" alt="img">
+                </button>
+              </div>
+            </div>
+
+            <div class="new-item">
+              <div class="new-item__header">
+                <img src="img/iphone-bg-1.jpg" alt="img" class="new-item__img">
+              </div>
+              <div class="new-item__content">
+                <a href="card.html" class="new-item__link">Переходник Microusb Belkin USB-C</a>
+                <h4 class="new-item__desc">
+                  Cиликоновый чехол для iPhone SE/8/7 Lightweight Case
+                </h4>
+              </div>
+              <div class="new-item__footer">
+                <p class="new-item__prices">
+                  <span class="new-item__old-price">2 500 ₽</span>
+                  <span class="new-item__new-price">2 500 ₽</span>
+                </p>
+                <button class="new-item__stat">
+                  <img src="img/item-stat.svg" alt="img">
+                </button>
+                <button class="new-item__like">
+                  <img src="img/item-like.svg" alt="img">
+                </button>
+                <button class="new-item__cart">
+                  <img src="img/item-cart.svg" alt="img">
+                </button>
+              </div>
+            </div>
+
+            <div class="new-item">
+              <div class="new-item__header">
+                <img src="img/usb-belkin.png" alt="img" class="new-item__img">
+              </div>
+              <div class="new-item__content">
+                <a href="card.html" class="new-item__link">Переходник Microusb Belkin USB-C</a>
+                <h4 class="new-item__desc">
+                  Cиликоновый чехол для iPhone SE/8/7 Lightweight Case
+                </h4>
+              </div>
+              <div class="new-item__footer">
+                <p class="new-item__prices">
+                  <span class="new-item__old-price">2 500 ₽</span>
+                  <span class="new-item__new-price">2 500 ₽</span>
+                </p>
+                <button class="new-item__stat">
+                  <img src="img/item-stat.svg" alt="img">
+                </button>
+                <button class="new-item__like">
+                  <img src="img/item-like.svg" alt="img">
+                </button>
+                <button class="new-item__cart">
+                  <img src="img/item-cart.svg" alt="img">
+                </button>
+              </div>
+            </div>
+
+            <div class="new-item">
+              <div class="new-item__header">
+                <img src="img/usb-belkin.png" alt="img" class="new-item__img">
+              </div>
+              <div class="new-item__content">
+                <a href="card.html" class="new-item__link">Переходник Microusb Belkin USB-C</a>
+                <h4 class="new-item__desc">
+                  Cиликоновый чехол для iPhone SE/8/7 Lightweight Case
+                </h4>
+              </div>
+              <div class="new-item__footer">
+                <p class="new-item__prices">
+                  <span class="new-item__old-price">2 500 ₽</span>
+                  <span class="new-item__new-price">2 500 ₽</span>
+                </p>
+                <button class="new-item__stat">
+                  <img src="img/item-stat.svg" alt="img">
+                </button>
+                <button class="new-item__like">
+                  <img src="img/item-like.svg" alt="img">
+                </button>
+                <button class="new-item__cart">
+                  <img src="img/item-cart.svg" alt="img">
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="load-more">
+            Показать еще
+          </button>
+
+          <div class="pagination">
+            <a href="#" class="pagination__arrow pagination__arrow--prev">
+              <img src="img/pag-prev.svg" alt="">
+            </a>
+            <a href="#" class="pagination__item">1</a>
+            <a href="#" class="pagination__item pagination__item--current">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item">4</a>
+            <a href="#" class="pagination__item">...</a>
+            <a href="#" class="pagination__item">9</a>
+            <a href="#" class="pagination__arrow pagination__arrow">
+              <img src="img/pag-next.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">Каталог</a>
+          <a href="#" class="footer-block__link">Конструктор чехлов</a>
+          <a href="#" class="footer-block__link">Новинки</a>
+          <a href="#" class="footer-block__link">Акции</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">Адреса магазинов</a>
+          <a href="#" class="footer-block__link">Доставка</a>
+          <a href="#" class="footer-block__link">Оплата</a>
+          <a href="service.html" class="footer-block__link">Сервис</a>
+          <a href="#" class="footer-block__link">Возврат товара</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">О нас</a>
+          <a href="#" class="footer-block__link">Оптовикам</a>
+          <a href="vacancies.html" class="footer-block__link">Вакансии</a>
+          <a href="#" class="footer-block__link">Контакты</a>
+          <a href="#" class="footer-block__link">Публичная оферта</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Подпишитесь на наши новости</h4>
+          <form action="#" class="footer-form">
+            <label for="footer-mail">E-mail</label>
+            <p class="footer-form__option">
+              <input id="footer-mail" name="footer mail" type="email" class="footer-form__input" required
+                placeholder="person@gmail.com">
+              <button class="footer-form__btn">
+                <img src="img/hero-next.svg" alt="">
+              </button>
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span class="footer-copy">ООО “Мобилус-рус” 2021</span>
+
+        <a href="#" class="footer-phone">+7 (921) 912-34-56</a>
+
+        <div class="footer-social">
+          <a href="#" class="footer-social__link footer-social__link--tg"></a>
+          <a href="#" class="footer-social__link footer-social__link--fb"></a>
+          <a href="#" class="footer-social__link footer-social__link--insta"></a>
+          <a href="#" class="footer-social__link footer-social__link--vk"></a>
+        </div>
+
+        <span class="footer-confidentiality">Политика конфиденциальности</span>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

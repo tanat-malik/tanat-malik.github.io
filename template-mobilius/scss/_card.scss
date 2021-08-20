@@ -25,8 +25,18 @@
     align-items: flex-start;
     flex-direction: column;
   }
+  &__thumbnail {
+    width: 72px;
+    height: 75px;
+    object-fit: cover;
+  }
   &__full {
     margin-left: 24px;
+  }
+  &__full-photo {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
   }
 }
 
@@ -170,9 +180,11 @@
   }
   &__title {
     color: #757c83;
+    margin-right: 5px;
   }
   &__type {
     color: #000000;
+    text-align: right;
   }
 }
 
@@ -199,12 +211,18 @@
     display: flex;
     align-items: flex-start;
   }
-  &__desc {
+  &__content-block {
     width: 552px;
+    margin-right: 20px;
+  }
+  &__desc {
+    &--hidden {
+      display: none;
+    }
   }
   &__desc-title {
     margin-bottom: 28px;
-    font-family: 'Intro Bold', Arial, sans-serif;
+    font-family: "Intro Bold", Arial, sans-serif;
     font-weight: bold;
     font-size: 25px;
     line-height: 130%;
@@ -234,5 +252,109 @@
     width: 100%;
     height: 3px;
     background: #ee6409;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .card-slider {
+    flex-direction: column;
+    &__full {
+      margin: 0 0 20px;
+      order: -1;
+    }
+    &__full-photo {
+      width: 300px;
+      height: 400px;
+    }
+    &__thumbnails {
+      flex-direction: row;
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-section {
+    flex-direction: column;
+  }
+
+  .card-slider {
+    margin: 0 0 40px;
+    align-self: center;
+  }
+
+  .card-tabs {
+    &__buttons {
+      margin-bottom: 40px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__content-block {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .card-description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-title {
+    max-width: 100%;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .card-slider {
+    &__full-photo {
+      height: 350px;
+    }
+  }
+
+  .card-color {
+    margin-bottom: 25px;
+  }
+
+  .card-value {
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    &__new-price {
+      margin: 0;
+      font-size: 25px;
+    }
+    &__old-price {
+      margin: 0 0 10px;
+    }
+  }
+
+  .card-buttons {
+    margin: 0 0 25px;
+    flex-wrap: wrap;
+  }
+
+  .card-button {
+    &__btn--cart {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+  }
+
+  .card-desc {
+    &__item {
+      font-size: 12px;
+    }
   }
 }

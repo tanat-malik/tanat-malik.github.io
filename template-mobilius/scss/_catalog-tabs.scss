@@ -3,6 +3,9 @@
   border-bottom: 1px solid #C9D0D7;
   display: flex;
   align-items: flex-start;
+
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .catalog-tab {

@@ -18,3 +18,28 @@
     color: #676f77;
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1140px) {
+
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .product-name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}

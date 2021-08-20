@@ -64,6 +64,7 @@
     color: #000000;
   }
   &__link {
+    width: 265px;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -85,4 +86,75 @@
       margin-left: 52px;
     }
   }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1140px) {
+
+  .about-service {
+    &__desc {
+      max-width: 650px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .about-service {
+    &__desc {
+      max-width: 500px;
+      font-size: 30px;
+    }
+    &__link {
+      width: 210px;
+      img {
+        margin-left: 20px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .service-banner {
+    margin-bottom: 50px;
+  }
+
+  .about-service {
+    flex-direction: column;
+    align-items: flex-start;
+    &__desc {
+      max-width: 100%;
+      margin: 0 0 20px;
+    }
+    &__link {
+      margin-left: 0;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+  .about-service {
+    margin-bottom: 50px;
+    &__desc {
+      font-size: 20px;
+    }
+    &__link {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      img {
+        margin-left: auto;
+      }
+    }
+  }
+
 }

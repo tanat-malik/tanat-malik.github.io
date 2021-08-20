@@ -87,6 +87,9 @@
           <a href="#" class="site-nav__link">Создай свой чехол</a>
         </li>
       </ul>
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
+      </div>
     </nav>
 
   </header>
@@ -147,9 +150,13 @@
       <div class="catalog">
 
         <div class="filter-section">
-          <form action="#" class="filter-form">
 
-            <fieldset class="filter">
+
+          <button class="filter-show-btn">Фильтры</button>
+
+          <form action="#" class="filter-form filter-form--show">
+
+            <fieldset class="filter filter__range">
               <legend class="filter__title">
                 <span>Цена, ₽</span>
                 <span class="filter__title-chevron"></span>
@@ -520,7 +527,7 @@
           <a href="#" class="footer-block__link">Публичная оферта</a>
         </div>
 
-        <div class="footer-block">
+        <div class="footer-block footer-block__form-block">
           <h4 class="footer-block__title">Подпишитесь на наши новости</h4>
           <form action="#" class="footer-form">
             <label for="footer-mail">E-mail</label>

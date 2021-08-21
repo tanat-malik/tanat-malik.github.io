@@ -7803,13 +7803,26 @@
 // Переменные
 const siteNav = document.querySelector('.site-nav');
 
+const filterShowBtn = document.querySelector('.filter-show-btn');
+const filterSection = document.querySelector('.filter-section');
+const filterForm = document.querySelector('.filter-form');
+const filtersTitle = document.querySelectorAll('.filter__title');
+
+const catalogSelect = document.querySelector('.catalog-select');
+
+const cardSlider = document.querySelector('.card-section__slider');
+
+const cardColor = document.querySelector('.card-color');
+
+const tabButtons = document.querySelectorAll('[data-card-tab]');
+
 // Menu burger
 document.querySelector('.menu-icon-wrapper').onclick = function(){
   document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
   siteNav.classList.toggle('site-nav--show')
 }
 
-
+// Слайдер для блока hero
 const heroSwiper = new Swiper('.hero-swiper-container', {
   // Optional parameters
   loop: true,
@@ -7826,6 +7839,7 @@ const heroSwiper = new Swiper('.hero-swiper-container', {
   },
 });
 
+// Слайдер для карточек товара
 const newItemsSwiper = new Swiper('.new-items-swiper-container', {
   // Optional parameters
   loop: true,
@@ -7856,3 +7870,125 @@ const newItemsSwiper = new Swiper('.new-items-swiper-container', {
     }
   }
 });
+
+// Скрипт для фильтра
+if (filterShowBtn) {
+
+  filterShowBtn.addEventListener('click', function () {
+    filterForm.classList.toggle('filter-form--show')
+  })
+
+}
+
+// Скрипт для блока каталог
+if (filterSection) {
+
+  let sliderOne = document.querySelector(".filter-range__input-1");
+  let sliderTwo = document.querySelector(".filter-range__input-2");
+  let displayValOne = document.querySelector(".filter-range__value-1");
+  let displayValTwo = document.querySelector(".filter-range__value-2");
+  let minGap = 0;
+
+  function slideOne(){
+      if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+          sliderOne.value = parseInt(sliderTwo.value) - minGap;
+      }
+      displayValOne.textContent = sliderOne.value;
+  }
+
+  function slideTwo(){
+      if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+          sliderTwo.value = parseInt(sliderOne.value) + minGap;
+      }
+      displayValTwo.textContent = sliderTwo.value;
+  }
+
+  sliderOne.addEventListener('input', slideOne)
+  sliderTwo.addEventListener('input', slideTwo)
+
+
+
+  filtersTitle.forEach(elem => {
+    elem.addEventListener('click', function (evt) {
+      evt.currentTarget.closest('.filter').classList.toggle('filter--open')
+    })
+  })
+
+  // Скрипт кастомного селектора
+  catalogSelect.addEventListener('click', function(evt) {
+    catalogSelect.classList.toggle('catalog-select--open');
+
+    if (evt.target.classList.contains('catalog-select__item')) {
+      let text = evt.target.textContent;
+      document.querySelector('.catalog-select__top').textContent = text;
+    }
+  });
+
+}
+
+if (cardSlider) {
+
+  const cardThumbnails = document.querySelectorAll('.card-slider__thumbnail');
+  const cardFullPhoto = document.querySelector('.card-slider__full-photo');
+  
+
+  cardThumbnails.forEach(elem => {
+    elem.addEventListener('click', function(evt) {
+      let img = evt.target.getAttribute('src');
+      cardFullPhoto.src = img;
+    })
+  })
+
+}
+
+// Селектор выбора цвета
+if (cardColor) {
+  cardColor.addEventListener('click', function (evt) {
+
+    if (evt.target.classList.contains('card-color__btn')) {
+  
+      // Удаляем у кнопок активный класс
+      document.querySelectorAll('.card-color__btn')
+        .forEach(function (item) {
+          item.classList.remove('card-color__btn--active')
+        });
+      // Добавляем к активный класс тому, у которого произошло событие клика
+      evt.target.classList.add('card-color__btn--active');
+  
+    };
+  
+  });
+  
+}
+
+ // Табы товара
+if (tabButtons) {
+
+  const cardContentBoxes = document.querySelectorAll('[data-tab-content]');
+
+  // Табы товара
+  tabButtons.forEach(function (tabButton) {
+
+    tabButton.addEventListener('click', function() {
+
+      // Удаляем класс
+      tabButtons.forEach(function (activeTab) {
+        activeTab.classList.remove('card-tab--active')
+      })
+
+      // Скрыть все cardContentBoxes
+      cardContentBoxes.forEach(function (cardContent) {
+        cardContent.classList.add('card-tabs__desc--hidden');
+      });
+
+      // Показать нужный content box
+      const contentBox = document.querySelector('#' + this.dataset.cardTab);
+      contentBox.classList.remove('card-tabs__desc--hidden');
+      // Добавить табу активный класс
+      tabButton.classList.add('card-tab--active"');
+
+    });
+
+  });
+
+}

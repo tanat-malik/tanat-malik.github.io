@@ -1,0 +1,21 @@
+.presentation {
+  padding: 0 0 45px;
+  .section-title {
+    margin-bottom: 30px;
+  }
+  &__content {
+    max-width: 540px;
+  }
+  &__desc {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &--blue-color {
+      font-weight: 500;
+      color: #232FE5;
+    }
+  }
+}

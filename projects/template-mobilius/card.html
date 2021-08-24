@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+
+    <div class="top-nav">
+      <div class="container top-nav__container">
+        <ul class="top-list">
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Магазины</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Доставка</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Контакты</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Сервис</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Оптовикам</a>
+          </li>
+        </ul>
+        <a href="tel:89219123456" class="header-phone">+7 (921) 912-34-56</a>
+      </div>
+    </div>
+
+    <div class="middle-nav">
+      <div class="container middle-nav__container">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo.svg" alt="Logo" width="110" height="48">
+        </a>
+
+        <form action="#" class="header-search">
+          <input type="text" name="name" class="header-search__input" placeholder="Поиск по каталогу" required>
+          <button class="header-search__btn"></button>
+        </form>
+
+        <div class="user-nav">
+          <a href="#" class="user-nav__item">
+            <img src="img/header-stat.svg" alt="img">
+            <span class="user-nav__title">Сравнение</span>
+          </a>
+          <a href="#" class="user-nav__item">
+            <img src="img/header-like.svg" alt="img">
+            <span class="user-nav__title">Избранное</span>
+          </a>
+          <a href="#" class="user-nav__item">
+            <img src="img/header-user.svg" alt="img">
+            <span class="user-nav__title">Войти</span>
+          </a>
+        </div>
+
+        <a href="#" class="cart-block">6 500 ₽</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Чехлы</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Стекла</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Аксессуары</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Новинки</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Распродажа</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Создай свой чехол</a>
+        </li>
+      </ul>
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__divider"></span>
+        <a href="#" class="breadcrumbs__link">Чехлы</a>
+        <span class="breadcrumbs__divider"></span>
+        <span class="breadcrumbs__current">Iphone</span>
+      </div>
+
+      <h2 class="card-title">
+        Чехол Iphone 12 pro с кольцом и стразами
+      </h2>
+
+      <div class="card-section">
+
+        <div class="card-section__slider card-slider">
+
+          <div class="card-slider__thumbnails">
+            <img src="img/iphone-s-max.png" alt="img" class="card-slider__thumbnail">
+            <img src="img/slider-full-photo.png" alt="img" class="card-slider__thumbnail">
+            <img src="img/thumbnail-1.png" alt="img" class="card-slider__thumbnail">
+          </div>
+
+          <div class="card-slider__full">
+            <img src="img/slider-full-photo.png" alt="img" class="card-slider__full-photo">
+          </div>
+
+        </div>
+
+        <div class="card-section__desc card-description">
+
+          <div class="card-color">
+            <h4 class="card-color__title">Цвет:</h4>
+            <ul class="card-color__list">
+              <li class="card-color__item">
+                <button class="card-color__btn card-color__btn" data-card-color="red" aria-label="Choice red color"
+                  style="background-color: red;"></button>
+              </li>
+              <li class="card-color__item">
+                <button class="card-color__btn card-color__btn--active" data-card-color="pink"
+                  aria-label="Choice pink color" style="background-color: pink;"></button>
+              </li>
+              <li class="card-color__item">
+                <button class="card-color__btn card-color__btn" data-card-color="black" aria-label="Choice black color"
+                  style="background-color: black;"></button>
+              </li>
+              <li class="card-color__item">
+                <button class="card-color__btn card-color__btn" data-card-color="yellow"
+                  aria-label="Choice yellow color" style="background-color: yellow;"></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-value">
+            <span class="card-value__new-price">2 500 ₽</span>
+            <span class="card-value__old-price">3 500 ₽</span>
+            <span class="card-value__availability">Осталось 1 шт на складе</span>
+          </div>
+
+          <div class="card-buttons">
+            <button class="card-button__btn card-button__btn--cart">
+              <img src="img/card-cart.svg" alt="img">
+              <span>В корзину</span>
+            </button>
+            <button class="card-button__btn card-button__btn--stat">
+              <img src="img/card-stat.svg" alt="img">
+              <span>Сравнить</span>
+            </button>
+            <button class="card-button__btn card-button__btn--like">
+              <img src="img/card-like.svg" alt="img">
+              <span>В избранное</span>
+            </button>
+          </div>
+
+          <ul class="card-desc">
+            <li class="card-desc__item">
+              <span class="card-desc__title">Вид чехла</span>
+              <span class="card-desc__type">Накладка</span>
+            </li>
+            <li class="card-desc__item">
+              <span class="card-desc__title">Рекомендовано для</span>
+              <span class="card-desc__type">Apple</span>
+            </li>
+            <li class="card-desc__item">
+              <span class="card-desc__title">Модель устройства</span>
+              <span class="card-desc__type">Apple Iphone 12</span>
+            </li>
+            <li class="card-desc__item">
+              <span class="card-desc__title">Материал</span>
+              <span class="card-desc__type">Силикон</span>
+            </li>
+            <li class="card-desc__item">
+              <span class="card-desc__title">Особенности</span>
+              <span class="card-desc__type">Подходит для беспроводной зарядки</span>
+            </li>
+          </ul>
+
+          <button class="card-all-characteristics">
+            <img src="img/compare.svg" alt="img">
+            <span>Все характеристики</span>
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="card-tabs">
+
+        <div class="card-tabs__buttons">
+          <button data-card-tab="tab-1" class="card-tab">Описание</button>
+          <button data-card-tab="tab-2" class="card-tab card-tab--active">Характеристики</button>
+          <button data-card-tab="tab-3" class="card-tab">Оплата и доставка</button>
+          <button data-card-tab="tab-4" class="card-tab">Отзывы</button>
+        </div>
+
+        <div class="card-tabs__content">
+
+          <div class="card-tabs__content-block">
+            <div data-tab-content class="card-tabs__desc card-tabs__desc--hidden" id="tab-1">
+
+              <div class="card-tabs__desc-characteristics">
+                <h3 class="card-tabs__desc-title">Описание</h3>
+                <ul class="card-desc">
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Вид чехла</span>
+                    <span class="card-desc__type">Накладка</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div data-tab-content class="card-tabs__desc" id="tab-2">
+
+              <div class="card-tabs__desc-characteristics">
+                <h3 class="card-tabs__desc-title">Характеристики</h3>
+                <ul class="card-desc">
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Вид чехла</span>
+                    <span class="card-desc__type">Накладка</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Рекомендовано для</span>
+                    <span class="card-desc__type">Apple</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Модель устройства</span>
+                    <span class="card-desc__type">Apple Iphone 12</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Материал</span>
+                    <span class="card-desc__type">Силикон</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Особенности</span>
+                    <span class="card-desc__type">Подходит для беспроводной зарядки</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Застежка</span>
+                    <span class="card-desc__type">Без застежки</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Страна-изготовитель</span>
+                    <span class="card-desc__type">Китай</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Гарантия</span>
+                    <span class="card-desc__type">1 год</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Внешние размеры</span>
+                    <span class="card-desc__type">150х74,5х8</span>
+                  </li>
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Макс. диагональ, дюймы</span>
+                    <span class="card-desc__type">6.1</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div data-tab-content class="card-tabs__desc card-tabs__desc--hidden" id="tab-3">
+
+              <div class="card-tabs__desc-characteristics">
+                <h3 class="card-tabs__desc-title">Оплата и доставка</h3>
+                <ul class="card-desc">
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Вид чехла</span>
+                    <span class="card-desc__type">Накладка</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div data-tab-content class="card-tabs__desc card-tabs__desc--hidden" id="tab-4">
+
+              <div class="card-tabs__desc-characteristics">
+                <h3 class="card-tabs__desc-title">Отзывы</h3>
+                <ul class="card-desc">
+                  <li class="card-desc__item">
+                    <span class="card-desc__title">Вид чехла</span>
+                    <span class="card-desc__type">Накладка</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="courier">
+            <h3 class="courier__title">Доставим курьером за 1 день!</h3>
+            <p class="courier__desc">
+              Закажите доставку товаров в своем городе и от суммы 5000 р. мы доставим все товары бесплатно!
+            </p>
+            <a href="#" class="btn-primary courier__btn">Узнать условия</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">Каталог</a>
+          <a href="#" class="footer-block__link">Конструктор чехлов</a>
+          <a href="#" class="footer-block__link">Новинки</a>
+          <a href="#" class="footer-block__link">Акции</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">Адреса магазинов</a>
+          <a href="#" class="footer-block__link">Доставка</a>
+          <a href="#" class="footer-block__link">Оплата</a>
+          <a href="service.html" class="footer-block__link">Сервис</a>
+          <a href="#" class="footer-block__link">Возврат товара</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">О нас</a>
+          <a href="#" class="footer-block__link">Оптовикам</a>
+          <a href="vacancies.html" class="footer-block__link">Вакансии</a>
+          <a href="#" class="footer-block__link">Контакты</a>
+          <a href="#" class="footer-block__link">Публичная оферта</a>
+        </div>
+
+        <div class="footer-block footer-block__form-block">
+          <h4 class="footer-block__title">Подпишитесь на наши новости</h4>
+          <form action="#" class="footer-form">
+            <label for="footer-mail">E-mail</label>
+            <p class="footer-form__option">
+              <input id="footer-mail" name="footer mail" type="email" class="footer-form__input" required
+                placeholder="person@gmail.com">
+              <button class="footer-form__btn">
+                <img src="img/hero-next.svg" alt="">
+              </button>
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span class="footer-copy">ООО “Мобилус-рус” 2021</span>
+
+        <a href="#" class="footer-phone">+7 (921) 912-34-56</a>
+
+        <div class="footer-social">
+          <a href="#" class="footer-social__link footer-social__link--tg"></a>
+          <a href="#" class="footer-social__link footer-social__link--fb"></a>
+          <a href="#" class="footer-social__link footer-social__link--insta"></a>
+          <a href="#" class="footer-social__link footer-social__link--vk"></a>
+        </div>
+
+        <span class="footer-confidentiality">Политика конфиденциальности</span>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

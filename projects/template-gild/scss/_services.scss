@@ -1,0 +1,38 @@
+.services {
+  margin: 65px 0 90px;
+  .section-title {
+    margin: 0 0 40px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.service-block {
+  border-radius: 5px;
+  overflow: hidden;
+  &__link {
+    display: block;
+  }
+  &__img {
+    img {
+      object-fit: cover;
+    }
+  }
+  &__desc {
+    padding: 15px 0;
+    background: linear-gradient(180deg, rgba(65, 65, 65, 0.45) 0%, rgba(43, 43, 43, 0.9) 100%);
+    backdrop-filter: blur(26px);
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F3F3F3;
+  }
+}

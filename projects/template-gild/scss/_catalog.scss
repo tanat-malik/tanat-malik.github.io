@@ -1,0 +1,122 @@
+.catalog {
+  padding: 0 0 55px;
+  .section-title {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.catalog-section {
+  width: 880px;
+}
+
+.catalog-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+  &__form {
+    margin-left: auto;
+  }
+}
+
+.catalog-search,
+.catalog-select,
+.catalog-view {
+  font-family: $ttnorms;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: #575B5E;
+}
+
+.catalog-search {
+  margin-right: 50px;
+  &__counter {
+    color: #1DB28F;
+  }
+}
+
+.catalog-select {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  user-select: none;
+  cursor: pointer;
+  &--open {
+    .catalog-select__dropdown {
+      display: block;
+    }
+  }
+  &__title {
+    margin-right: 5px;
+  }
+  &__select {
+    position: relative;
+  }
+  &__top {
+    color: #1DB28F;
+    position: relative;
+  }
+  &__dropdown {
+    display: none;
+    background-color: #fff;
+    padding: 5px 0 5px 5px;
+
+    text-align: right;
+
+    position: absolute;
+    left: -20px;
+    width: 130px;
+    top: calc(100%);
+    z-index: 100;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.catalog-form {
+  width: 235px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__input {
+    width: 100%;
+    height: 35px;
+    padding: 0 50px 0 25px;
+    border: 1px solid #F3CD82;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 112.69%;
+    color: #525252;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 35px;
+      color: #525252;
+    }
+  }
+  &__btn {
+    width: 39px;
+    height: 35px;
+    background: linear-gradient(180deg, #F5D89F 0%, #DDB15C 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.catalog-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Italic.eot');
+    src: local('Karla Italic'), local('Karla-Italic'),
+        url('Karla-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Karla-Italic.woff2') format('woff2'),
+        url('Karla-Italic.woff') format('woff'),
+        url('Karla-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-BoldItalic.eot');
+    src: local('Karla Bold Italic'), local('Karla-BoldItalic'),
+        url('Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karla-BoldItalic.woff2') format('woff2'),
+        url('Karla-BoldItalic.woff') format('woff'),
+        url('Karla-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Bold.eot');
+    src: local('Karla Bold'), local('Karla-Bold'),
+        url('Karla-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Karla-Bold.woff2') format('woff2'),
+        url('Karla-Bold.woff') format('woff'),
+        url('Karla-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Regular.eot');
+    src: local('Karla'), local('Karla-Regular'),
+        url('Karla-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Karla-Regular.woff2') format('woff2'),
+        url('Karla-Regular.woff') format('woff'),
+        url('Karla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

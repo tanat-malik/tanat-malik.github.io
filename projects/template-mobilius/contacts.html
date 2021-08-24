@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-contacts">
+
+  <header class="main-header">
+
+    <div class="top-nav">
+      <div class="container top-nav__container">
+        <ul class="top-list">
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Магазины</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Доставка</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Контакты</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Сервис</a>
+          </li>
+          <li class="top-list__item">
+            <a href="#" class="top-list__link">Оптовикам</a>
+          </li>
+        </ul>
+        <a href="tel:89219123456" class="header-phone">+7 (921) 912-34-56</a>
+      </div>
+    </div>
+
+    <div class="middle-nav">
+      <div class="container middle-nav__container">
+        <a class="header-logo" href="#">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+
+        <form action="#" class="header-search">
+          <input type="text" name="name" class="header-search__input" placeholder="Поиск по каталогу" required>
+          <button class="header-search__btn"></button>
+        </form>
+
+        <div class="user-nav">
+          <a href="#" class="user-nav__item">
+            <img src="img/header-stat.svg" alt="img">
+            <span class="user-nav__title">Сравнение</span>
+          </a>
+          <a href="#" class="user-nav__item">
+            <img src="img/header-like.svg" alt="img">
+            <span class="user-nav__title">Избранное</span>
+          </a>
+          <a href="#" class="user-nav__item">
+            <img src="img/header-user.svg" alt="img">
+            <span class="user-nav__title">Войти</span>
+          </a>
+        </div>
+
+        <a href="#" class="cart-block">6 500 ₽</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Чехлы</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Стекла</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Аксессуары</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Новинки</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="catalog.html" class="site-nav__link">Распродажа</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Создай свой чехол</a>
+        </li>
+      </ul>
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">Компания</a>
+        <span class="breadcrumbs__divider"></span>
+        <span class="breadcrumbs__current">Контакты</span>
+      </div>
+
+      <div class="contacts-wrapper">
+
+        <div class="contacts-nav">
+
+          <h2 class="contact-title">Контакты</h2>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <p class="contacts-list__heading">Фактический адрес</p>
+              <p class="contacts-list__desc">Москва, 197374, ул. Оптиков, д. 4
+              </p>
+            </li>
+            <li class="contacts-list__item">
+              <p class="contacts-list__heading">Ежедневно, с 9:00 до 21:00</p>
+              <a href="#" class="contacts-list__phone">+7 999 234-34-64</a>
+            </li>
+            <li class="contacts-list__item">
+              <p class="contacts-list__heading">По вопросам розничных продаж</p>
+              <a href="#" class="contacts-list__email">info@mobilius.ru</a>
+            </li>
+            <li class="contacts-list__item">
+              <p class="contacts-list__heading">Мы в соцсетях</p>
+              <div class="contacts-social">
+                <a href="#" class="contacts-social__link contacts-social__link--tg"></a>
+                <a href="#" class="contacts-social__link contacts-social__link--fb"></a>
+                <a href="#" class="contacts-social__link contacts-social__link--insta"></a>
+                <a href="#" class="contacts-social__link contacts-social__link--vk"></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="contacts-map">
+          <!-- Здесь будет карта -->
+          <img src="img/contact-map.jpg" alt="img" width="744" height="408">
+        </div>
+
+      </div>
+
+      <div class="contacts-callback">
+        <h2 class="contacts-callback__title">Обратная связь</h2>
+
+        <form action="#" class="callback-form">
+
+          <div class="callback-form__block callback-form__block--left">
+
+            <div class="callback-form__option">
+              <label class="callback-form__label" for="name">Имя</label>
+              <input type="text" name="name" id="name" class="callback-form__input" required>
+            </div>
+
+            <div class="callback-form__option">
+              <label class="callback-form__label" for="tel">Телефон</label>
+              <input type="text" name="tel" id="tel" class="callback-form__input" required>
+            </div>
+
+            <div class="callback-form__option">
+              <label class="callback-form__label" for="email">E-mail</label>
+              <input type="text" name="email" id="email" class="callback-form__input" required>
+            </div>
+
+          </div>
+
+          <div class="callback-form__block callback-form__block--textarea">
+
+            <div class="callback-form__option">
+              <label class="callback-form__label" for="comment">Ваше сообщение</label>
+              <textarea class="callback-form__textarea" name="comment" id="comment" placeholder="Ваше сообщение" required></textarea>
+            </div>
+
+            <button class="btn-primary callback-form__btn">Перейти к оплате</button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">Каталог</a>
+          <a href="#" class="footer-block__link">Конструктор чехлов</a>
+          <a href="#" class="footer-block__link">Новинки</a>
+          <a href="#" class="footer-block__link">Акции</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">Адреса магазинов</a>
+          <a href="#" class="footer-block__link">Доставка</a>
+          <a href="#" class="footer-block__link">Оплата</a>
+          <a href="service.html" class="footer-block__link">Сервис</a>
+          <a href="#" class="footer-block__link">Возврат товара</a>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="footer-block__title">Продукция</h4>
+          <a href="#" class="footer-block__link">О нас</a>
+          <a href="#" class="footer-block__link">Оптовикам</a>
+          <a href="#" class="footer-block__link">Вакансии</a>
+          <a href="#" class="footer-block__link">Контакты</a>
+          <a href="#" class="footer-block__link">Публичная оферта</a>
+        </div>
+
+        <div class="footer-block footer-block__form-block">
+          <h4 class="footer-block__title">Подпишитесь на наши новости</h4>
+          <form action="#" class="footer-form">
+            <label for="footer-mail">E-mail</label>
+            <p class="footer-form__option">
+              <input id="footer-mail" name="footer mail" type="email" class="footer-form__input" required
+                placeholder="person@gmail.com">
+              <button class="footer-form__btn">
+                <img src="img/hero-next.svg" alt="">
+              </button>
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span class="footer-copy">ООО “Мобилус-рус” 2021</span>
+
+        <a href="#" class="footer-phone">+7 (921) 912-34-56</a>
+
+        <div class="footer-social">
+          <a href="#" class="footer-social__link footer-social__link--tg"></a>
+          <a href="#" class="footer-social__link footer-social__link--fb"></a>
+          <a href="#" class="footer-social__link footer-social__link--insta"></a>
+          <a href="#" class="footer-social__link footer-social__link--vk"></a>
+        </div>
+
+        <span class="footer-confidentiality">Политика конфиденциальности</span>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.page-vacancies {
+  .breadcrumbs {
+    margin-bottom: 38px;
+  }
+}
+
+.vacancies-title {
+  margin-bottom: 56px;
+  font-family: "Intro Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+  color: #000000;
+}
+
+.vacancy-table {
+  width: 100%;
+  margin-bottom: 82px;
+  border-collapse: collapse;
+}
+
+.vacancy-option {
+  border-bottom: 1px solid #c9d0d7;
+}
+
+.table-name {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  /* identical to box height, or 19px */
+  color: #717171;
+  padding-bottom: 9px;
+}
+
+.vacancy-name {
+  font-family: "Intro Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  /* identical to box height, or 26px */
+  color: #000000;
+}
+
+.vacancy-experience,
+.vacancy-salary {
+  font-family: "Intro Regular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  /* identical to box height, or 22px */
+  color: #000000;
+}
+
+.vacancy-info {
+  width: 205px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+  color: #000000;
+}
+
+.hr-block {
+  max-width: 709px;
+  margin: 0 auto 91px;
+  padding: 31px 45px 35px 57px;
+  border: 3px solid #ee6409;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-family: "Intro Bold", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+  }
+
+  .hr-phone,
+  .hr-email {
+    font-family: 'Intro Bold', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+    color: #000000;
+    transition: .2s;
+    &:hover {
+      color: #ee6409;
+    }
+  }
+}

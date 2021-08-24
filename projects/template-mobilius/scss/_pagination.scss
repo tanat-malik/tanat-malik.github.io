@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__arrow--prev {
+    margin-right: 32px;
+  }
+  &__arrow--next {
+    margin-left: 32px;
+  }
+  &__item {
+    min-width: 32px;
+    height: 40px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Intro Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #676f77;
+    &--current,
+    &:hover {
+      border-color: #F77D0C;
+    }
+  }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="template-gallery">
+
+  <header class="main-header">
+
+    <nav class="nav">
+      <div class="container">
+
+        <div class="user-nav">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="Logo">
+          </a>
+          <span class="site-logo black-color">
+            Производитель пассажирских сидений
+          </span>
+          <ul class="address">
+            <li class="address__item">
+              <h4 class="address__town black-color">Нижний Новгород</h4>
+              <a href="#" class="address__street black-color">
+                ул. Памирская, д. 11, п. 9
+              </a>
+            </li>
+            <li class="address__item">
+              <a href="#" class="address__phone black-color">8 (800) 550-17-68</a>
+              <span class="address__slogan black-color">Бесплатно по России</span>
+            </li>
+            <li class="address__item">
+              <a href="#" class="address__phone black-color">+7 (831) 423-73-71</a>
+              <span class="address__slogan black-color">Заказать обратный звонок</span>
+            </li>
+          </ul>
+          <div class="lang">
+            <button class="lang__ru"></button>
+            <button class="lang__us"></button>
+          </div>
+        </div>
+
+        <div class="site-nav">
+          <button class="btn-primary product-button">
+            <span class=" product-button__heading">Каталог продукции</span>
+            <img src="img/burger.png" alt="X">
+          </button>
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a href="about.html" class="site-list__link black-color">О компании</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link black-color">Галерея</a>
+            </li>
+            <li class="site-list__item">
+              <a href="pay-delivery.html" class="site-list__link black-color">Оплата и доставка</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link black-color">Гарантии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link black-color">Контакты</a>
+            </li>
+          </ul>
+          <a href="#" class="cart">
+            <div class="cart__block-icon">
+              <span class="cart__order-value">25</span>
+              <img src="img/cart-icon-black.svg" alt="Cart">
+            </div>
+            <div class="cart__block-content">
+              <p class="cart__title">Корзина</p>
+              <p class="cart__cost black-color">18 000 руб.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="breadcrumbs">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <span class="breadcrumbs__divider">-</span>
+        <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+        <span class="breadcrumbs__divider">-</span>
+        <span class="breadcrumbs__current">Диван трехместный «Комфорт 3»</span>
+      </div>
+
+      <div class="card-section">
+        <div class="card-section__slider card-slider">
+          <div class="card-slider__thumbnails">
+            <img class="card-slider__thumbnail" src="img/card-thumbnail.png" alt="card">
+            <img class="card-slider__thumbnail" src="img/products/product-8.png" alt="card">
+            <img class="card-slider__thumbnail" src="img/products//product-3.png" alt="card">
+          </div>
+          <div class="card-slider__full-photo">
+            <img src="img/card-full-photo.png" alt="Card">
+          </div>
+        </div>
+        <div class="card-section__desc card">
+          <h3 class="card__title">Диван трехместный «Комфорт 3»</h3>
+          <div class="card__option card-price">
+            <div class="card__prices">
+              <p class="card__option-title">Цена</p>
+              <span class="card__price-new">от 200 400 руб</span>
+              <span class="card__price-old">от 200 400 руб</span>
+            </div>
+            <div class="card__values">
+              <p class="card__option-title">Выбрать количество</p>
+              <div class="card-counter-wrapper">
+                <div class="card__value-control" data-action="card-minus">-</div>
+                <div class="card__value-current" data-card-counter>1</div>
+                <div class="card__value-control" data-action="card-plus">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__option card-color">
+            <p class="card__option-title">Цвет</p>
+            <ul class="card-color__list">
+              <li class="card-color__item">
+                <button class="card-color__btn card-color__btn--active" data-card-color="red" aria-label="Choice red color" style="background-color: red;"></button>
+              </li>
+              <li class="card-color__item">
+                <button class="card-color__btn" data-card-color="blue" aria-label="Choice red color" style="background-color: blue;"></button>
+              </li>
+              <li class="card-color__item">
+                <button class="card-color__btn" data-card-color="white" aria-label="Choice red color" style="background-color: white;"></button>
+              </li>
+              <li class="card-color__item">
+                <button class="card-color__btn" data-card-color="yellow" aria-label="Choice red color" style="background-color: yellow;"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="card__option">
+            <div class="card__option-title">
+              Выберите дополнительные опции
+            </div>
+            <div class="card-option-select">
+              <div class="card-option-select__top">
+                Дополнительные опции 1
+              </div>
+              <div class="card-option-select__dropdown">
+                <ul class="card-option-select__list">
+                  <li class="card-option-select__item">
+                    Дополнительные опции 1
+                  </li>
+                  <li class="card-option-select__item">
+                    Дополнительные опции 2
+                  </li>
+                  <li class="card-option-select__item">
+                    Дополнительные опции 3
+                  </li>
+                  <li class="card-option-select__item">
+                    Дополнительные опции 4
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card__option card-buttons">
+            <button class="card__button card__button--cart btn-primary">
+              <img src="img/card-button-icon.svg" alt="">
+              <span>В корзину</span>
+            </button>
+            <button class="card__button card__button--buy btn-primary">Купить в 1 клик</button>
+          </div>
+          <a class="card__delivery-link" href="#">Доставка и оплата</a>
+        </div>
+      </div>
+
+      <div class="card-tabs">
+        <ul class="card-tabs__list">
+          <li class="card-tabs__item card-tabs__item--active" data-card-tab="tab-1">Описание</li>
+          <li class="card-tabs__item" data-card-tab="tab-2">Характеристики</li>
+          <li class="card-tabs__item" data-card-tab="tab-3">Преимущества</li>
+        </ul>
+        <div class="card-tabs__desc" id="tab-1" data-tab-content>
+          <p>
+            Описание Snom D717 White — это SIP-телефон премиум-класса с расширенными функциональными возможностями. Данная модель удовлетворит потребности крупных и не больших компаний.
+          </p>
+          <p>
+            Snom D717 White сочетает в себе отличные звуковые характеристики, привлекательный современный дизайн, гарантирует безупречное соединение, а благодаря продуманному интерфейсу, предоставляет легкий доступ к управлению настройками и функциями телефона.
+          </p>
+          <p>
+            Благодаря SIP-прошивке 5-го поколения Snom D717 White легко подключается к SIP-коммутатору или любой IP-АТС, которые используются в большинстве современных офисов по всему миру.
+          </p>
+        </div>
+        <div class="card-tabs__desc card-tabs__desc--hidden" id="tab-2" data-tab-content>
+          <p>
+            Характеристики Snom D717 White — это SIP-телефон премиум-класса с расширенными функциональными возможностями. Данная модель удовлетворит потребности крупных и не больших компаний.
+          </p>
+          <p>
+            Snom D717 White сочетает в себе отличные звуковые характеристики, привлекательный современный дизайн, гарантирует безупречное соединение, а благодаря продуманному интерфейсу, предоставляет легкий доступ к управлению настройками и функциями телефона.
+          </p>
+        </div>
+        <div class="card-tabs__desc card-tabs__desc--hidden" id="tab-3" data-tab-content>
+          <p>
+            Преимущества Snom D717 White — это SIP-телефон премиум-класса с расширенными функциональными возможностями. Данная модель удовлетворит потребности крупных и не больших компаний.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <section class="request">
+      <div class="container">
+        <div class="request__row">
+          <div class="request__content">
+            <h2 class="section-title">
+              Мы поможем вам подобрать необходимое сиденье и комплектующие для него, а так же ответим на любые вопросы.
+            </h2>
+            <p class="request__slogan">
+              Оставьте заявку, наш менеджер свяжется с вами в течение дня.
+            </p>
+            <form action="#" class="request-form">
+              <input class="request-form__input" type="text" name="name" placeholder="Ваше имя" required>
+              <input class="request-form__input" type="text" name="email" placeholder="Ваше имя" required>
+              <div class="request-form__checkbox-block">
+                <input type="checkbox" class="request-form__checkbox">
+                <p class="request-form__checkbox-desc">
+                  Заполняя форму и нажимая на кнопку вы соглашаетесь с политикой конфиденциальности и на сбор и
+                  обработку личных данных
+                </p>
+              </div>
+              <button class="btn-primary request-form__btn">Задать вопрос</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="main-footer__top">
+        <div class="footer-block">
+          <a href="#" class="footer-logo">
+            <img src="img/footer-logo.png" alt="Logo">
+          </a>
+          <div class="footer-contact">
+            <a href="#" class="footer-contact__phone">+7 (936) 000 03 03</a>
+            <span class="footer-contact__heading">Бесплатный звонок по РФ</span>
+          </div>
+          <div class="footer-contact">
+            <a href="#" class="footer-contact__phone">contact@eurosid.ru</a>
+            <span class="footer-contact__heading">Пн - пт с 9:00 до 18:00</span>
+          </div>
+        </div>
+        <div class="footer-block">
+          <h4 class="footer-block__title">Клиентам</h4>
+          <ul class="footer-block__list">
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">О компании</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Фотогалерея</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Оплата и доставка</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Новости</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Благотворительность</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h4 class="footer-block__title">Каталог</h4>
+          <ul class="footer-block__list">
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Пассажирские сиденья</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Комплектующие для сидений</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Комплектующие для автобуса</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Поролон</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Автомобильные люки</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Сиденья для яхт и катеров</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Ремни безопасности</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Крепление для сидений</a>
+            </li>
+            <li class="footer-block__list-item">
+              <a href="" class="footer-block__list-link">Обивочные материалы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h4 class="footer-block__title">Принимаем к оплате</h4>
+          <div class="footer-block__payment">
+            <img src="img/payment-1.svg" alt="Payment">
+            <img src="img/payment-2.svg" alt="Payment">
+            <img src="img/payment-3.svg" alt="Payment">
+            <img src="img/payment-4.svg" alt="Payment">
+            <img src="img/payment-5.svg" alt="Payment">
+            <img src="img/payment-6.svg" alt="Payment">
+            <img src="img/payment-7.svg" alt="Payment">
+          </div>
+        </div>
+      </div>
+
+      <div class="main-footer__bottom">
+        <p>
+          г. Нижний Новгород, ул. Памирская, д. 11, пом. П9
+        </p>
+        <span>ИНН 5258113216</span>
+        <span>КПП 525801001</span>
+        <span> ОГРН 1145258000854</span>
+        <a href="">Карта сайта</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
